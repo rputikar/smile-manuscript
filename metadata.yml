@@ -1,0 +1,21 @@
+title:
+  A simple manuscript/preprint template for quarto
+runningtitle: Draft manuscript template
+runningauthor: FirstAuthor Lastname
+author:
+  - name: Ranjeet Utikar
+    affiliations:
+      - ref: cu
+    email: r.utikar@curtin.edu.au
+    corresponding: true
+affiliations:
+    - id: cu
+      name: 
+        "West Australian School of Mines: Minerals, Energy, and Chemical Engineering. Curtin University"
+abstract:
+    \lipsum[1]
+keywords:
+    keyword 1, keyword 2, keyword 3.
+reference-section-title: References
+bibliography: bibliography.bib
+

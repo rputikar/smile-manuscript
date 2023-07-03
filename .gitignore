@@ -1,0 +1,11 @@
+.DS_Store
+.Rproj.user
+.Rhistory
+/.luarc.json
+/manuscript.cls
+/orcidlink.sty
+/*.aux
+/*.log
+/*.tex
+/.quarto/
+/_output/
