@@ -70,6 +70,7 @@
 
 %% Colours
 \definecolor{sectioncolor}{HTML}{003466}
+\definecolor{mypink}{HTML}{db307a}
 % \definecolor{sectioncolor}{HTML}{000000}
 
 %% Page geometry
@@ -118,7 +119,7 @@ includehead,includefoot,heightrounded,
  innerbottommargin=1em]%
 \setlength{\parskip}{0.5em}%
 \textbf{Compiled} \today\\
-This is a \@papertype, pre-submission.\par
+This is \@papertype, pre-submission.\par
 \end{mdframed}
 }
 
