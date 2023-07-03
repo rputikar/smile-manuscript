@@ -123,17 +123,43 @@ This is \@papertype, pre-submission.\par
 \end{mdframed}
 }
 
-%% Coloured abstract
-\RequirePackage[runin]{abstract}
+% %% Coloured abstract
+% \RequirePackage[runin]{abstract}
 
-\renewcommand\abstractname{\normalfont{ABSTRACT}}
-\setlength{\absleftindent}{0pt}
-\setlength{\absrightindent}{0pt}
-\setlength{\abstitleskip}{0pt}
-\renewcommand{\abstractnamefont}{\bfseries\color{sectioncolor}\scshape}
-\abslabeldelim{\quad}
+% \renewcommand\abstractname{\normalfont{ABSTRACT}}
+% \setlength{\absleftindent}{0pt}
+% \setlength{\absrightindent}{0pt}
+% \setlength{\abstitleskip}{0pt}
+% \renewcommand{\abstractnamefont}{\bfseries\color{sectioncolor}\scshape}
+% \abslabeldelim{\quad}
 
-\newcommand{\keywords}[1]{{\raggedright\textbf{\color{sectioncolor}KEYWORDS:}\hspace{0.3em}#1\par}\vspace{\baselineskip}}
+\renewenvironment{abstract}%
+		 {%
+		  \begin{list}{}%
+		     {\setlength{\rightmargin}{0cm}%
+		      \setlength{\leftmargin}{0cm}}%
+		   \item[]\ignorespaces%
+		   \normalfont
+		   \textbf{\color{sectioncolor}{ABSTRACT:}}}%
+		 {\unskip\end{list}}
+
+% % \newcommand*{\keywordtitlestyle}[1]{{\sffamily\large\color{geomorphicacolor2} \bfseries #1}}
+% \newcommand*{\keywordtitlestyle}[1]{\normalfont\textbf{\color{sectioncolor}{KEYWORDS:}}#1\\[\baselineskip]}
+% \newenvironment{keywords}[1]
+%   {
+%     \par
+%     \noindent \keywordtitlestyle{#1} \hspace{0.2cm}\sffamily
+%   }{
+%     \vspace{0.3cm}}
+
+\newcommand{\keywords}[1]{\normalfont\textbf{\color{sectioncolor}{KEYWORDS:}}#1\\[\baselineskip]}
+
+% \newcommand{\keywords}[1]{
+%   {\raggedright\textbf{\color{sectioncolor}KEYWORDS:}
+%     \hspace{0.4em}#1\hspace{0.2em}\par
+%   }
+%   \vspace{\baselineskip}
+% }
 
 %% Headers
 \RequirePackage{fancyhdr}
