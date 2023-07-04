@@ -30,9 +30,9 @@ contributes:
       csl: chicago-author-date.csl
       pdf-engine: lualatex
       lang: en-US
-      mainfont: Gentium Plus
-      sansfont: Gentium Plus
-      mathfont: Gentium Plus
+      # mainfont: Gentium Plus
+      # sansfont: Gentium Plus
+      # mathfont: Gentium Plus
       include-in-header:
         - include-in-header.tex
       template-partials:

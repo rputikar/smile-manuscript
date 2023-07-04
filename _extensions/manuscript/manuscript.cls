@@ -66,6 +66,7 @@
 \RequirePackage{mdframed}
 \RequirePackage{changepage}
 \RequirePackage{enumitem}
+\RequirePackage{gentium}
 \RequirePackage[mathlines]{lineno}
 
 %% Colours
@@ -143,23 +144,14 @@ This is \@papertype, pre-submission.\par
 		   \textbf{\color{sectioncolor}{ABSTRACT:}}}%
 		 {\unskip\end{list}}
 
-% % \newcommand*{\keywordtitlestyle}[1]{{\sffamily\large\color{geomorphicacolor2} \bfseries #1}}
-% \newcommand*{\keywordtitlestyle}[1]{\normalfont\textbf{\color{sectioncolor}{KEYWORDS:}}#1\\[\baselineskip]}
-% \newenvironment{keywords}[1]
-%   {
-%     \par
-%     \noindent \keywordtitlestyle{#1} \hspace{0.2cm}\sffamily
-%   }{
-%     \vspace{0.3cm}}
+% \newcommand{\keywords}[1]{\normalfont\textbf{\color{sectioncolor}{KEYWORDS:}}#1\\[\baselineskip]}
 
-\newcommand{\keywords}[1]{\normalfont\textbf{\color{sectioncolor}{KEYWORDS:}}#1\\[\baselineskip]}
-
-% \newcommand{\keywords}[1]{
-%   {\raggedright\textbf{\color{sectioncolor}KEYWORDS:}
-%     \hspace{0.4em}#1\hspace{0.2em}\par
-%   }
-%   \vspace{\baselineskip}
-% }
+\newcommand{\keywords}[1]{
+  {\raggedright\textbf{\color{sectioncolor}KEYWORDS:}
+    \hspace{0.2em}#1\hspace{0.2em}\par
+  }
+  \vspace{\baselineskip}
+}
 
 %% Headers
 \RequirePackage{fancyhdr}
